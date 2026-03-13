@@ -64,7 +64,7 @@ class Bullet():
         self.img = pygame.image.load('bullet.png')
         self.x = playerX + 16
         self.y = playerY + 10
-        self.step = 8
+        self.step = 10
     #击中
     def hit(self):
         global score
