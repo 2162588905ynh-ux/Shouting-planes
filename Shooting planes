@@ -122,6 +122,8 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+    screen.blit(playerImg,(playerX,playerY))
+    playerX += 5 
         #通过键盘事件控制飞机移动
         if event.type == pygame.KEYDOWN:#按下就移动
             if event.key == pygame.K_RIGHT:
