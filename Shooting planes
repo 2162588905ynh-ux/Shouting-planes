@@ -60,11 +60,11 @@ def distance(bx, by, ex, ey):
     return math.sqrt(a*a + b*b) #开根号
 #子弹类
 class Bullet():
-    def __init__(self, x, y):
+    def __init__(self):
         self.img = pygame.image.load('bullet.png')
-        self.x = random.randint(200, 600)
-        self.y = random.randint(50, 200)
-        self.step = 10 #子弹移动的速度
+        self.x = playerX + 16
+        self.y = playerY + 10
+        self.step = 8
     #击中
     def hit(self):
         global score
