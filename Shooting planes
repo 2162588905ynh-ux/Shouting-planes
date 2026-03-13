@@ -19,7 +19,7 @@ playerStep = 0
 #分数
 score = 0
 font = pygame.font.Font('freesansbold.ttf', 32)
-#font = pygame.font.SysFont('simsunnsimsun',32) #宋体
+
 
 def show_score():
     text = (f"Score: {score}")
@@ -42,7 +42,7 @@ class Enemy():
     def __init__(self, x, y):
         self.img = pygame.image.load('enemy.png')
         self.x = random.randint(200, 600)
-        self.y = random.randint(50, 200)
+        self.y = random.randint(50, 250)
 
     #当被射中时恢复位置
     def reset(self):
