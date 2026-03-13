@@ -85,8 +85,7 @@ def show_bullets():
         b.hit() #看看是否击中了敌人
         b.y -= b.step #移动子弹
         #判断子弹是否出了界面，如果出了就移除掉
-        if b.y < 0:
-            bullets.remove(b)
+
 
 #显示敌人，并且实现敌人的移动和下沉
 eneymeImg = pygame.image.load('player.png')
