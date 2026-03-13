@@ -89,6 +89,10 @@ def show_bullets():
             bullets.remove(b)
 
 #显示敌人，并且实现敌人的移动和下沉
+eneymeImg = pygame.image.load('player.png')
+eneymeX = 400
+enemyeY = 100
+enemyeStep = 4
 def show_enemy():
     global enemies
     for e in enemies:
@@ -135,7 +139,7 @@ while running:
 
     screen.blit(playerImg, (playerX, playerY))
     move_player() #移动玩家
-    show_enemy() #显示敌人
+    
     show_bullets() #显示子弹
     check_is_over() #显示游戏结束字段
     pygame.display.update()
